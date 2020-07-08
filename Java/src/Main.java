@@ -38,15 +38,6 @@ private static void printArray(int[] arr) {
 	}
 }
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 
-int a[]= {5,3,2,6,7,1,4};
-
-		printArray(a);
-		selectionSort(a);
-		System.out.print("\n");
-		printArray(a);
-	}
 
 }
