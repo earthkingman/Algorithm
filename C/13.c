@@ -3,23 +3,28 @@
 
 int main(void)
 {
-    int arr[10] = {0,};
-    int n;
+    char nbr;
+    char ch[10] = {0,};
+    char arr[100];
+    int i;
     int max = -1;
     int idx;
 
-    while (n > 0)
+    i = 0;
+    scanf("%s", &nbr);
+    while (arr[i] != 0)
     {
-        arr[n % 10]++;
-        n = n / 10;
+        ch[arr[i] - 48]++;
+        i++;
     }
     for (int i = 0; i < 10; i++)
     {
-        if (max <= arr[i])
+        if (max <= ch[i])
         {
-            max = arr[i];
+            max = ch[i];
             idx = i;
         }
     }
     printf("%d", idx);
+    return (0);
 }
