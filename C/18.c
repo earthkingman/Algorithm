@@ -5,16 +5,17 @@ int main(void)
     int n, m;
     int max_time;
     int count;
-    int sensor[10] = {23,17,120,34,112,136,123,23,25,113};
+    int sensor;
 
     max_time = 0;
     count = 0;
-    n = 10;
-    m = 90;
+    scanf("%d", &n);
+    scanf("%d", &m);
 
     for (int i = 0; i < n; i++)
     {
-        if (m < sensor[i])
+        scanf("%d", &sensor);
+        if (m < sensor)
             {   
                 count++;
                 if (max_time < count)
