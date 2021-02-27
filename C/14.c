@@ -19,11 +19,9 @@ bool isPrime(int x)
     int count;
 
     count = 0;
-    for (int i = 1; i < x; i++)
+    for (int i = 2; i < x; i++)
     {
         if (x % i == 0)
-            count++;
-        if (count > 2)
            return (false); 
     }
     return (true);
