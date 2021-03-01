@@ -1,10 +1,12 @@
 #include <stdio.h>
+#include <iostream>
 #include <vector>
 #include <algorithm>
 using namespace std;
 int main()
 {
     int a[100];
+    int n;
     int idx, temp;
 
     cin >> n;
