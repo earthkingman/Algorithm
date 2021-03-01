@@ -2,20 +2,24 @@
 
 int main(void)
 {
-    char a[100];
-    int left = 0;
-    int right = 0;
-    int i = 0;
-    scanf("%s", &a);
-    while(a[i])
+    char str[1000];
+    int count;
+    int i;
+
+    i = 0;
+    count = 0;
+    scanf("%s", &str);
+    while (str[i] != '\0')
     {
-        if (a[i] == '(')
-            left++;
-        if (a[i] == ')')
-            right++;
+        if (str[i] == '(')
+            count++;
+        else if (str[i] == ')')
+            count--;
+        if (count < 0)
+            break;
         i++;
     }
-    if (right == left)
+    if (count == 0)
         printf("YES");
     else
         printf("NO");

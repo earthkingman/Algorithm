@@ -14,7 +14,7 @@ int main(void)
     }
     for (int i = 0; i < n - m + 1; i++)
     {
-        for (int j = 0; j < m; j++)
+        for (int j = i; j < i + m; j++)
         {
             sum += list[i + j];
         }

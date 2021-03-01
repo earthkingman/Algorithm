@@ -5,7 +5,7 @@ int main(void)
     int n;
     int max;
     int count;
-    int list[10000];
+    int list[100000];
 
     max = 0;
     count = 0;

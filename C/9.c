@@ -1,8 +1,8 @@
 #include <stdio.h>
-
+int cnt[50001]; //전역변수로 선언하면 0으로 초기화 됨
 int main()
 {
-    int cnt[50001];
+
     int n,i,j;    
 
      scanf("%d", &n);
