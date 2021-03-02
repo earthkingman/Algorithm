@@ -4,19 +4,19 @@ int main(void)
 {
     int n;
     int sum;
-    int nbr;
+    int d;
     int count;
     int answer;
 
     sum = 0;
     count = 1;
-    nbr = 9;
+    d = 9;
     scanf("%d", &n);
-    while (n > sum + nbr)
+    while (n > sum + d)
     {
-        answer = answer + nbr * count;
-        sum = sum + nbr;
-        nbr = nbr * 10;
+        answer = answer + d * count;
+        sum = sum + d;
+        d = d * 10;
         count++;
         
     }
