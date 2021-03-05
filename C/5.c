@@ -4,7 +4,7 @@ int main(void)
 {
     char a[20];
     int year, age;
-    scanf("%s", &a);
+    scanf("%s", a);
     if (a[7] == '1' || a[7] == '2')
         year = 1900 + ((a[0] - 48) * 10 + (a[1] - 48));
     else 
