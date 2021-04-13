@@ -20,36 +20,39 @@ int main(int argc, char **argv)
     int i;
     int j;
     int k;
-    char answer[1000];
+    char answer[100000];
     k = 0;
     i = 0;
     j = 0;
-    if (argc < 2)
+    if (argc < 3)
         return 0;
-    while (argv[1][i] != 0)
+    if (argc == 3)
     {
-        if (check(answer, argv[1][i]) == 0 )
+        while (argv[1][i] != 0)
         {
-            answer[k] = argv[1][i];
+            if (check(answer, argv[1][i]) == 0)
+            {
+                answer[k] = argv[1][i];
+                k++;
+            }
+            i++;
+        }
+        while (argv[2][j] != 0)
+        {
+            if (check(answer, argv[2][j]) == 0)
+            {
+                answer[k] = argv[2][j];
+                k++;
+            }
+            j++;
+        }
+        answer[k] = 0;
+        k = 0;
+        while (answer[k] != 0)
+        {
+            write(1, &answer[k], 1);
             k++;
         }
-        i++;
-    }
-    while (argv[2][j] != 0)
-    {
-        if (check(answer, argv[2][j]) == 0)
-        {
-            answer[k] = argv[2][j];
-            k++;
-        }
-        j++;
-    }
-    answer[k] = 0;
-    k = 0;
-    while (answer[k] != 0)
-    {
-        write(1, &answer[k], 1);
-        k++;
     }
     return (0);
 }

@@ -9,7 +9,11 @@
         "bitset": "cpp",
         "chrono": "cpp",
         "unordered_map": "cpp",
-        "stack": "cpp"
+        "stack": "cpp",
+        "ios": "cpp",
+        "__split_buffer": "cpp",
+        "deque": "cpp",
+        "functional": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }
