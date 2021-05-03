@@ -41,16 +41,19 @@ int get_next_line(char **line)
     char buff;
 
     *line = malloc(1);
+    if (!(*line))
+        return (-1);
     (*line)[0] = 0;
-    while((rb = read(0, &buff, 1)) > 0)
+    while ((rb = read(0, &buff, 1)) > 0)
     {
         if (buff == '\n')
             return (1);
         *line = sum(*line, buff);
-        if (*line)
-            return(-1);
+        if (*line == 0)
+            return (-1);
     }
     if (rb == -1)
         return (-1);
-    return (0);
+    else
+        return (0);
 }
