@@ -41,7 +41,10 @@ int main(void)
         cx = qx.front(); 
         qy.pop();
         cc = qc.front(); 
-        qy.pop();
+        qc.pop();
+        if (visit[cy][cx])
+            continue;
+        visit[cy][cx] = 1;
     }
 
 }

@@ -1,24 +1,22 @@
 #include <iostream>
-#include <vector>
-
+#include <algorithm>
 using namespace std;
 
-void decimalTobinary(int n)
+void D(int n)
 {
     int temp;
-    if ((n / 2) > 0)
-    {
-        decimalTobinary(n / 2);
-    }
-    temp = n % 2;
-    printf("%d", temp);
+    if (n == 0)
+        return ;
+    tob(n / 2);
+    temp = n % 2;  
+    printf("%d",temp);
 }
 
-int main()
+int main(void)
 {
-    int n;
+    int a;
 
-    cin >> n;
-    decimalTobinary(n);
-    return (0);
+    scanf("%d", &a);
+    D(a);
+    return 0;
 }
