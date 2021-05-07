@@ -55,7 +55,7 @@ int handle_specific(char **s, va_list ap)
         done += write(1, print, len);
     }
     else if (*(*s) == 'd' || *(*s) == 'x')
-    { //d or x
+    { 
         char arr[21] = {
             0,
         };
