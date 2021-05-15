@@ -14,7 +14,10 @@
         "__split_buffer": "cpp",
         "deque": "cpp",
         "functional": "cpp",
-        "sstream": "c"
+        "sstream": "c",
+        "istream": "cpp",
+        "iterator": "cpp",
+        "queue": "cpp"
     },
     "C_Cpp.errorSquiggles": "Disabled"
 }
