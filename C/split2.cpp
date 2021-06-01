@@ -1,21 +1,21 @@
 #include <stdio.h>
-#include <sstream>
 #include <string>
+#include <sstream>
 #include <iostream>
 #include <vector>
-
 using namespace std;
 
 vector<string> split(string str, char a)
 {
-    vector<string>line_list;
     string temp;
     stringstream ss(str);
-    while(getline(ss, temp, a))
+    vector<string>result;
+    while(getline(ss,temp,a))
     {
-        line_list.push_back(temp);
+        result.push_back(temp);
     }
-    return line_list;
+
+    return result;
 }
 
 
